@@ -12,8 +12,11 @@ const ProductCard = ({name, description, thumbnail})=> {
        {description}
         </div>
      </div>
+    
     );
     
 }
+
+
 
 export default ProductCard;
