@@ -1,16 +1,16 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home"
+import Home from "./pages/Home";
 import ProductDetail from "./pages/ProductDetail";
 import Basket from "./pages/Basket";
 import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter basename="YYYY2">
+    <BrowserRouter basename="yyyy2">
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/product/:productId" element={<ProductDetail />} />
-      <Route path="/basket" element={<Basket />} />
+      <Route path="/" element={< Home />} />
+      <Route path="/product/:productId" element={< ProductDetail />} />
+      <Route path="/basket" element={< Basket />} />
  
 
     </Routes>
