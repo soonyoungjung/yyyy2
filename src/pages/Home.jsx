@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard";
 import styled from "styled-components";
 import { useEffect, useState } from "react";
 import { mockTheme1Products, mockTheme2Products } from "../data/mockData";
-import {useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 
 const Home = ()=>{
@@ -30,7 +30,7 @@ const Home = ()=>{
     return (
         <div>
          <div>
-            <Navigation/>
+            <Navigation name="코멘토 쇼핑"/>
             <ThemeSection>
             <ThemeButton 
             themeName={"#따순머그컵"} 
@@ -47,7 +47,7 @@ const Home = ()=>{
     {products ? (
       products.map((product) => (
         <ProductCard
-        onClick={() => NavigationPreloadManager(`product/${product.id}`)}
+        onClick={() => navigate(`product/${product.id}`)}
         key={product.id}
         name={product.name}
         description={product.description}

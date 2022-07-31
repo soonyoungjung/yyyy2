@@ -19,6 +19,7 @@ const ProductThumbnail = styled.div`
     height: 204px;
     background-size: cover;
     background-position: center;
+    margin-bottom: 12px;
 `;
 const ProductName = styled.div`
     font-weight: 700;
@@ -29,7 +30,7 @@ const ProductName = styled.div`
 `;
 const ProductDesc = styled.div`
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     letter-spacing: -0.01em;
     color: #000000;
